@@ -20,6 +20,10 @@ public class DiamondCreator {
     public String create() {
         return String.join("\n", build());
     }
+    
+    private int calculateInitialPadding(){
+        return letter - 65;
+    }
 
     private List<String> build(){
         int currentLetter = 'A';
@@ -44,9 +48,6 @@ public class DiamondCreator {
         return answer;
     }
 
-    private int calculateInitialPadding(){
-        return letter - 65;
-    }
 
     private String lineBuilder(char letter, int padding){
         char[] line = new char[lineLength];

@@ -56,6 +56,19 @@ public class DiamondKataAcceptanceTests {
     }
 
     @Test
+    void shouldFunctionCorrectlyWithLowercaseLetter() throws IOException {
+        // arrange
+        DiamondCreator diamondCreator = new DiamondCreator('c');
+
+        // act
+        String actual = diamondCreator.create();
+        String expected = Files.readString(getFixture("c_diamond.txt"));
+
+        // assert
+        assertEquals(expected, actual);
+    }
+
+    @Test
     void shouldPrintTheUberDiamondWhenZ() throws IOException {
         // arrange
         DiamondCreator diamondCreator = new DiamondCreator('Z');
