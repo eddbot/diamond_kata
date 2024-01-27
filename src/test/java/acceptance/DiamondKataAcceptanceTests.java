@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -13,7 +14,7 @@ public class DiamondKataAcceptanceTests {
     
     
     private Path getFixture(String filename) {
-        return Path.of(getClass().getClassLoader().getResource(filename).getPath());
+        return Path.of(Objects.requireNonNull(getClass().getClassLoader().getResource(filename)).getPath());
     }
 
 
