@@ -18,14 +18,14 @@ public class DiamondCreator {
     }
 
     public String create() {
-        return String.join("\n", build());
+        return String.join("\n", buildDiamond());
     }
     
     private int calculateInitialPadding(){
         return letter - 65;
     }
 
-    private List<String> build(){
+    private List<String> buildDiamond(){
         int currentLetter = 'A';
         int padding = calculateInitialPadding();
         List<String> answer = new ArrayList<>();
