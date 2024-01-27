@@ -1,6 +1,6 @@
 package acceptance;
 
-import org.example.domain.DiamondCreator;
+import com.murismo.domain.DiamondCreator;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;

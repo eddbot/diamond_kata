@@ -1,6 +1,6 @@
 package unit;
 
-import org.example.domain.DiamondCreator;
+import com.murismo.domain.DiamondCreator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;

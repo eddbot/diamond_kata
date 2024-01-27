@@ -1,4 +1,4 @@
-package org.example.domain;
+package com.murismo.domain;
 
 import java.util.ArrayList;
 import java.util.Arrays;
